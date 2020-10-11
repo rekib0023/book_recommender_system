@@ -3,6 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,data,react,node,visualstudiocode,pycharm,flask,django
 
 ### Data ###
+*.zip
 *.csv
 *.dat
 *.efx
