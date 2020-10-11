@@ -3,14 +3,16 @@ import pandas as pd
 import joblib
 
 from recommendation_models.config import config
-from recommendation_models.processing import data_management
+from recommendation_models.processing.data_management import load_dataset
 
 
 def run_training() -> None:
     """Train the model."""
     
-    books, users, ratings = data_management.load_datasets()
-    print(books.columns)
+    data = load_dataset()
+    print(data.columns)
+    print(data.iloc[0])
+    print(data.iloc[1])
 
     print('Training...')
 
